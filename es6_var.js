@@ -12,6 +12,7 @@ function varFunction(condition){
 console.log(varFunction(0));//yellow
 console.log(varFunction(1));//yellow
 
+
 console.log("--------------------------------------------")
 var value2 = "yellow";
 function var2Function(condition){
@@ -25,6 +26,7 @@ function var2Function(condition){
 }
 console.log(var2Function(0));//white
 console.log(var2Function(1));//undefined
+
 
 console.log("--------------------------------------------")
 var value3 = "yellow";
@@ -41,7 +43,6 @@ console.log(var3Function(0));//undefined
 console.log(var3Function(1));//red
 
 
-
 console.log("--------------------------------------------")
 var value4 = "yellow";
 function var4Function(condition){
@@ -56,7 +57,6 @@ function var4Function(condition){
 }
 console.log(var4Function(0));//white
 console.log(var4Function(1));//red
-
 
 
 console.log("------------------------------------------")
@@ -85,6 +85,8 @@ function var5_2Function(condition){
 }
 console.log(var5_2Function(1));//yellow
 console.log(value5_2)//yellow
+
+
 console.log("---------------------------------------------")
 var value6 = "yellow";
 function var6Function(condition){
@@ -111,6 +113,7 @@ function var6_2Function(condition){
 }
 console.log(var6_2Function(1));//red
 console.log(value6_2)//red
+
 
 console.log("--------------------------------------------")
 var value7 = "yellow";
@@ -141,6 +144,7 @@ function var7_2Function(condition){
 console.log(var7_2Function(1));//red
 console.log(value7_2);//red
 
+
 console.log("--------------------------------------------")
 var value8 = "yellow";
 function var8Function(condition){
@@ -153,7 +157,6 @@ function var8Function(condition){
     var value8='white';
     return value8;
 }
-
 console.log(var8Function(0));//white
 console.log(value8)//yellow
 
@@ -170,6 +173,7 @@ function var8_2Function(condition){
 }
 console.log(var8_2Function(1));//red
 console.log(value8_2);//yellow
+
 
 console.log("--------------------------------------------")
 var value9 = "yellow";
