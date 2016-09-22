@@ -215,10 +215,3 @@ for (const key in object) {
 funcs4.forEach(function(func) {
     func(); // "a", "b", "c"
 });
-
-/*
-var v1="v1";
-console.log(v1,window.v1,window.v1===v1);//v1 v1 true
-let v2="v2";
-console.log(v2,window.v2,window.v2===v2);//v2 undefined false
-*/
