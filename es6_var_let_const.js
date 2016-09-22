@@ -5,20 +5,10 @@ function getV1(){
     let value1 = "yellow";
     return value1;
 }
-getV1();
-let value2 = "red";
-function getV2(){
-    value2 = "black";
-    console.log(value2);//black
-    return value2;
-}
-getV2();
-let value3 = "red";
-function getV3(){
-    console.log(value3);//red
-    return value3;
-}
-getV3();
+console.log(getV1());//yellow
+console.log(value1)//red
+
+
 let value4 = "red";
 function getV4(){
     //value4 = "black";//ReferenceError: value4 is not defined
@@ -63,7 +53,7 @@ function getV8(condition) {
 console.log(getV8(0))//yellow
 console.log(getV8(1))//blue
 console.log(value8)//red
-console.log("-----------------------------------")
+console.log("--------------xxx------------------")
 function getV9(){
     var v9="yellow";
     return v9;
@@ -76,6 +66,20 @@ function getV10(){
     //var v10="red";//SyntaxError: Identifier 'v10' has already been declared
 }
 console.log(getV10());
+
+function getV9_2(){
+    let v9_2="yellow";
+    return v9_2;
+    //let v9_2="red";//SyntaxError: Identifier 'v9' has already been declared
+}
+console.log(getV9_2());
+function getV10_2(){
+    var v10_2="yellow";
+    return v10_2;
+    var v10_2="red";
+}
+console.log(getV10_2());
+
 console.log("-----------------------------------")
 //console.log(v11);//ReferenceError: v11 is not defined
 if(1){
@@ -117,7 +121,7 @@ if(1){
     console.log(v14);//yellow
 }
 var v14="red"
-console.log(v13);//red
+console.log(v14);//red
 
 
 console.log("-----------------------------------")
@@ -162,6 +166,13 @@ person.address = "Shanghai";
 //person={ name:'Rory'};//Assignment to constant variable.
 console.log(person);//{ name: 'Greg', address: 'Shanghai' }
 
+const personlist=['Mary','Peter'];
+personlist.push('Bobo');
+//personlist = ["new person"];//Assignment to constant variable.
+console.log(personlist)
+
+
+
 //console.log(c1)//ReferenceError: c1 is not defined
 const c1="red";
 console.log(c1)//red
@@ -178,7 +189,7 @@ if(1){
     const c2="yellow"
     console.log(c2)
 }
-console.log(c2)
+console.log(c2)//red
 
 if(1){
     let c3 = "red";
