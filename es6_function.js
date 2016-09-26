@@ -98,6 +98,25 @@ let sum = (num1, num2) => num1 + num2;
 let getName = () => "Nicholas";
 let getTempItem = id => ({ id: id, name: "Temp" });
 let doOnething = () => { console.log('doOnething')};
+
+const fn= ({name,address,callfun})=>{
+    //TODO: arguments,this
+    console.log(name,address,callfun);
+}
+fn({
+    name:'xxxxx',
+    address:'Shanghai',
+    callfun:function(){
+        console.log('Hello');
+    }
+});
+
+const fn2=(text)=>({
+    'name':'rory',
+    text
+})
+console.log(fn2('hello world'));
+
 console.log(reflect(1),sum(1,2),getName(),getTempItem('id001'));
 doOnething();
 console.log(sum.call(null, 1, 2));
